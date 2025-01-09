@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arash Shafiee | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ARASH SHAFIEE</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about">
+                <img src="arashportrait2.jpg" alt="Arash Shafiee" />
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hi, I'm Arash. I'm an Iranian Computer Science student at concordia. When I'm not coding, you'll find me watching football (die-hard Real Madrid fan) or enjoying a good cup of coffee or tea. Currently, I'm focused on enhancing my programming skills, primarily in Java and Python, while exploring other programming languages to broaden my expertise.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Current Skills</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C and C++</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Learning Next</h3>
+                            <ul>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>Bootstrap</li>
+                                <li>Rust</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact">
+                <p>Let's connect! Reach out through any of these platforms:</p>
+                <a href="mailto:arash.shafiee@live.concorida.ca">Email</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Arashcito" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arash Shafiee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
